@@ -28,6 +28,13 @@ public class dispatchController {
     @Autowired
     PassengerService passengerService;
 
+    @PostMapping("/dispatch2.0")
+    public ApiResult<DispatchModel> dispatch2_0(@RequestBody Points points) throws Exception {
+        List<Driver> drivers = driverService.list();
+
+        return ApiResult.success(Dispatch.dispatchV2_0(points.getOrigin(), drivers));
+    }
+
     @PostMapping("/dispatch3.0")
     public ApiResult<DispatchModel> dispatch3_0(@RequestBody Points points) throws Exception {
         List<Driver> drivers = driverService.list();
