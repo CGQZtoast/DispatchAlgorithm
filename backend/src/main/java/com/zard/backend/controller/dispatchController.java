@@ -2,23 +2,18 @@ package com.zard.backend.controller;
 
 import com.zard.backend.common.ApiResult;
 import com.zard.backend.model.DispatchModel;
-import com.zard.backend.model.NavigateModel;
 import com.zard.backend.param.Points;
 import com.zard.backend.pojo.Driver;
 import com.zard.backend.pojo.Passenger;
 import com.zard.backend.service.DriverService;
 import com.zard.backend.service.PassengerService;
 import com.zard.backend.util.Dispatch;
-import com.zard.backend.util.Navigate;
-import com.zard.backend.util.Point;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @Author 乌贼
