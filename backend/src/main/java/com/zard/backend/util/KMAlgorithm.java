@@ -124,4 +124,14 @@ public class KMAlgorithm {
         }
         return false;
     }
+
+    public static void main(String[] args) {
+        int[][] weight = {
+                {-3, -5},
+                {-5, -12}
+        };
+
+        KMAlgorithm.KM(weight);
+
+    }
 }
